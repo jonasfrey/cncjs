@@ -1,12 +1,12 @@
 // license Jonas Immanuel Frey GPL
 
 // --- parameters ---
-text_content   = "Hello";
-font_size      = 20;       // mm
-extrude_depth  = 3;        // mm — how tall/thick the letters are
+text_content   = "Katja";
+font_size      = 30;       // mm
+extrude_depth  = 1;        // mm — how tall/thick the letters are
 font_name      = "Liberation Sans:style=Bold";
-add_base_plate = true;     // flat plate underneath the text
-base_thickness = 2;        // mm — thickness of base plate
+add_base_plate = false;    // flat plate underneath the text
+base_thickness = 0;        // mm — thickness of base plate
 base_padding   = 3;        // mm — extra space around text on base plate
 
 // --- text object ---
