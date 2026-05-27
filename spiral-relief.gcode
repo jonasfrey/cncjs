@@ -8,6 +8,7 @@ G90         ( absolute positioning )
 G17         ( XY plane )
 G0 Z5.000  ( go to safe height )
 G0 X0 Y0    ( go to center )
+M3          ( spindle on )
 
 ( Pass 1/5 — target Z: -0.200 )
 G0 X0.000 Y0.000
@@ -4440,4 +4441,5 @@ X20.000 Y-0.000 Z-1.000
 
 G0 Z5.000  ( retract )
 G0 X0 Y0    ( go home )
+M5           ( spindle off )
 M2           ( end program )
