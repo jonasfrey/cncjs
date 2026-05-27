@@ -50,6 +50,21 @@ Load your `.nc` or `.gcode` file and press **Cycle Start**.
 
 ---
 
+## Setting zero with gcode (MDI console)
+
+If you prefer typing gcode directly instead of clicking buttons:
+
+```gcode
+G10 L20 P1 X0 Y0 Z0   ( zero all axes at once )
+G10 L20 P1 X0 Y0      ( zero X and Y only )
+G10 L20 P1 Z0         ( zero Z only )
+```
+
+Type these in the CNCjs MDI console and press Enter.
+`G10 L20 P1` writes to the G54 work coordinate system and is saved permanently.
+
+---
+
 ## Notes
 
 - The Zero buttons in CNCjs send `G10 L20 P1` — this is saved to the machine and survives a reset
